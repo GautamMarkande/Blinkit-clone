@@ -1,0 +1,324 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+@import url('./variable.css');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var( --font-family);
+}
+
+header .header-container{
+    display: flex;
+    align-items: center;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+    height: 86px;
+    position: fixed;
+    border-bottom: 1px solid rgb(238, 238, 238);
+    background-color: white;
+}
+.logo{
+    width: 12%;
+}
+.logo svg{
+    width: 80%;
+    height: 25px;
+}
+.location{
+    width: 320px;
+}
+.location .location-title{
+    color: rgb(0, 0, 0);
+    font-weight: 800;
+    margin-bottom: 6px;
+    font-size: 18px;
+}
+.location .location-desc{
+    font-size: 13px;
+    font-weight: var(--fw-800);
+}
+.search-bar{
+    width: 45%;
+    padding: 0px 12px;
+    height: 46px;
+    display: flex;
+    gap: 8px;
+    border: 1px solid rgb(232, 232, 232);
+    border-radius: 12px;
+    background: rgb(248, 248, 248);
+    color: rgb(130, 130, 130);
+    box-shadow: none;
+}
+.search-bar input{
+    color: #666;
+    font-size: 15px;
+    width: 100%;
+    border: 1px none #666;
+    font-family: 'Okra', Helvetica;
+    background-color: inherit;
+}
+.login{
+    width: 162px;
+    padding: 10px;
+    padding-left: 50px;
+    border: 0.5px snow inherit;
+    font-size: 18px;
+    font-weight: 400;
+    color: rgb(54, 54, 54);
+    font-family: 'Okra', Helvetica;
+    transition: font-size 0.5s ease 0s;
+   
+}
+.login a{
+    text-decoration: none;
+    color: inherit;
+}
+.cart-button{
+    background-color: rgb(12, 131, 31);
+    border-radius: 8px;
+    cursor: pointer;
+    height: 52px;
+    width: 112px;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    display: flex;
+    color: white;
+}
+.search-bar .fa-magnifying-glass{
+    width: 50px;
+    height: 20px;
+    color: var(--color-black);
+    padding-top: 10px;
+}
+
+header .header-container .cart-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 5px;
+}
+/*main content*/
+main{
+    width: 100%;
+    margin-top: 100px;
+}
+.banner{
+    width: 100%;
+    justify-content: center;
+    max-width: 3000px;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    display: flex;
+    /* margin-top: 90px; */
+}
+.banner img{
+    width: 100%;
+}
+.banner .banner-image{
+    width: 85%;
+}
+.carausal-section-row2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.carausal-images{
+    
+    display: flex;
+    overflow: auto;
+    gap: 20px;
+    width: 85%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.carausal-images::-webkit-scrollbar{
+    display: none;
+}
+/*grid items part*/
+ .product-menu{
+    gap: 30px;
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    justify-content: center;
+    width: 100%;
+    padding-left: 64px;
+    padding-right: 69px;
+}
+.product{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    margin-left: 26px;
+}
+.product-card{
+    width: 10%;
+}
+.product-menu .product-card img{
+    width:100px;
+    display: flex;
+    justify-content: center;
+}
+.last-row-product{
+    display:flex;
+    flex-direction: column;
+}
+.image-of-product{
+    width: 300px;
+}
+.image-of-product img{
+    width: 185px;
+    height: 185px;
+}
+.set-of-cards-product{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    margin-top: 20px;
+}
+.carausal-section-row3{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.products-and-info{
+    width: 200px;
+    height: 300px;
+    
+}
+.product-heading{
+    display: flex;
+    width: 100%;  
+    justify-content: space-around; 
+    gap:30%
+
+}
+.heading-carausal{
+
+    font-size: 30px;
+    font-weight: 700;
+    width: 328px;
+   
+}
+
+.seeall a{
+    text-decoration: none;
+    color:  rgb(12, 131, 31);
+    font-size: 20px;
+  
+}
+.seeall{
+    display: flex;
+    align-items: center;
+    display: flex;
+    width: 328px;
+    justify-content: flex-end;
+    margin-left: 50px;
+}
+.products-and-info{
+    border: 0.2px solid #f2e3e3;
+    height: 342px;
+    box-shadow: 0 5px 10px rgba(154,160,185,0.05), 0 15px 40px rgba(166,173,201,0.2);
+}
+.products-and-info .image-box-of-product a img{
+    width: 150px;
+    padding: 5px;
+}
+.image-box-of-product{
+    width: 215px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.info-box-of-product{
+    width: 215px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    text-align: left;
+}
+.carausal-section-row3{
+    width: 100%;
+}
+.info-box-of-product{
+    width: 100%;
+    padding: 5px 15px;
+    
+}
+.timer{
+    font-size: 10px;
+    font-weight: 200;
+}
+.product-heading{
+    font-size: 15px;
+    font-weight: 500;
+    padding: 20px;
+
+}
+.quantity{
+    font-size: 15px;
+    color: #666;
+}
+.info-box-of-product .timer,.product-heading, .quantity,.product-price-button-box{
+    width: 100%;
+}
+.product-price-button-box{
+    display: flex;
+    justify-content: space-between;
+}
+.price{
+    width: 57px;
+    height: 36px;
+    overflow: hidden;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    font-size: 12px;
+    font-weight: bold;
+}
+.button{
+    border: 3px solid rgb(12, 131, 31);
+    color: rgb(12, 131, 31);
+    background-color: white;
+    width: 57px;
+    height: 36px;
+    border-radius: 5px;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+.gautam{
+    display: flex;
+    overflow: auto;
+    width: 88%;
+    height: 342px;
+    gap: 10px;
+    margin-left: 110px;
+    
+}
+ .gautam::-webkit-scrollbar{
+    display: none;
+}
+footer{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 400px;
+}
+footer .footer-heading-box{
+    padding: 0px;
+}
+.animation-class{
+    display: flex;
+    align-items: center;
+}
